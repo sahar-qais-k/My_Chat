@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white"
     android:orientation="vertical"
     android:paddingBottom="20dp"
-    android:paddingEnd="@dimen/mainPadding"
-    android:paddingTop="@dimen/mainPadding"
+    android:paddingEnd="50dp"
+    android:paddingTop="40dp"
     android:paddingStart="@dimen/startPadding"
     >
 

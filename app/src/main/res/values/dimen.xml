@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="mainPadding">50dp</dimen>
+
     <dimen name="startPadding">20dp</dimen>
     <dimen name="imageHeight">20dp</dimen>
     <dimen name="iconDimen">35dp</dimen>
