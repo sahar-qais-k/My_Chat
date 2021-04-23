@@ -6,41 +6,33 @@
     tools:context=".MainActivity"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="50dp"
+    android:paddingBottom="50dp"
+    android:paddingEnd="50dp"
+    android:paddingTop="50dp"
+    android:paddingStart="20dp"
     >
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:background="@drawable/sent_massage_container"
-        android:layout_gravity="end"
-        android:orientation="vertical">
+        style="@style/sentMassageContainer">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:paddingRight="25dp"
-            android:paddingLeft="25dp"
-            android:paddingTop="25dp"
+            style="@style/massageTextView.sentMassage"
             android:text="Hi Leo. Whats up ?? \nI need a new logo for group."
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textAlignment="textStart">
+            >
             </TextView>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:paddingStart="10dp"
-            android:paddingEnd="20dp"
-            android:paddingBottom="4dp">
-
+            style="@style/iconContainer">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="20dp"
                 android:src="@drawable/ic_baseline_done_all_24"
                 />
         </LinearLayout>
@@ -55,9 +47,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="22:30"
-            android:textColor="#b0b0b0"
-            android:textAlignment="textEnd"
-            android:fontFamily="sans-serif-medium"
+            style="@style/timeText.send"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/receiveMassageContainer"
+        android:background="@drawable/receive_massage_container">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/massageTextView.receiveMassage"
+            android:text="Ok, I’ll start next week.\nSend me documents today."
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22:30"
+            style="@style/timeText.receive"
             >
         </TextView>
     </LinearLayout>
