@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/white"
     android:orientation="vertical"
-    android:paddingBottom="50dp"
-    android:paddingEnd="50dp"
-    android:paddingTop="50dp"
-    android:paddingStart="20dp"
+    android:paddingBottom="20dp"
+    android:paddingEnd="@dimen/mainPadding"
+    android:paddingTop="@dimen/mainPadding"
+    android:paddingStart="@dimen/startPadding"
     >
 
     <LinearLayout
@@ -25,14 +26,13 @@
             android:text="Hi Leo. Whats up ?? \nI need a new logo for group."
             >
             </TextView>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/iconContainer">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="@dimen/imageHeight"
                 android:src="@drawable/ic_baseline_done_all_24"
                 />
         </LinearLayout>
@@ -52,8 +52,44 @@
         </TextView>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sent_massage_container"
+        style="@style/sentMassageContainer">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/massageTextView.sentMassage"
+            android:text="Simple , minimal and beauty.."
+            >
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/iconContainer">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/imageHeight"
+                android:src="@drawable/ic_baseline_done_all_24"
+                />
+        </LinearLayout>
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22:31"
+            style="@style/timeText.send"
+            >
+        </TextView>
+    </LinearLayout>
 
 
     <LinearLayout
@@ -68,8 +104,45 @@
             android:text="Ok, I’ll start next week.\nSend me documents today."
             >
         </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22:32"
+            style="@style/timeText.receive"
+            >
+        </TextView>
+    </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sent_massage_container"
+        style="@style/sentMassageContainer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/massageTextView.sentMassage"
+            android:text="Oh. That’s great 😍"
+            >
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/iconContainer">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/imageHeight"
+                android:src="@drawable/ic_baseline_done_all_24"
+                />
+        </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
@@ -80,11 +153,50 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="22:30"
-            style="@style/timeText.receive"
+            android:text="22:33"
+            style="@style/timeText.send"
             >
         </TextView>
     </LinearLayout>
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_text_shape"
+        android:padding="13dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/iconDimen"
+            android:layout_height="@dimen/iconDimen"
+            style="@style/iconProperties"
+            android:src="@drawable/ic_smiley_square_face_with_broken_teeth"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/iconDimen"
+            android:layout_height="@dimen/iconDimen"
+            style="@style/iconProperties"
+            android:src="@drawable/ic__025977021537355424"
+             />
+        <ImageView
+            android:layout_width="@dimen/iconDimen"
+            android:layout_height="@dimen/iconDimen"
+            android:src="@drawable/ic_mic"
+            style="@style/iconProperties"
+            />
+    </LinearLayout>
 
 </LinearLayout>

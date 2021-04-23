@@ -1,14 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MyChat" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.MyChat" parent="Theme.MaterialComponents.Light">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
     </style>
+
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title." parent="android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 
     <style name="sentMassageContainer">
         <item name="android:layout_marginStart">20dp</item>
@@ -50,9 +53,12 @@
     <style name="iconContainer">
         <item name="android:layout_gravity">bottom|end</item>
         <item name="android:textAlignment">textEnd</item>
-
         <item name="android:paddingStart">10dp</item>
         <item name="android:paddingEnd">20dp</item>
         <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="iconProperties">
+        <item name="android:padding">5dp</item>
+        <item name="android:tint">#b0b0b0</item>
     </style>
 </resources>
